@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <div class="CONTENT">
+        <%- include('header.ejs') %>
+
+            <div class="BODY">
+                <div class="CONTCONTAINER">
+                    <h1>Write to us...</h1>
+                    <form action="https://formspree.io/f/xdoyleld" method="post">
+                        <input type="text" name="fname" id="fname" class="NAMEBOX" placeholder="First Name">
+                        <input type="text" name="lname" id="lname" class="NAMEBOX" required placeholder="Last Name">
+                        <input type="email" name="email" placeholder="Email" required id="emailmsgbox">
+                        <textarea name="usermsg" id="usermsg" rows="5" required placeholder="Type your Message here"></textarea>
+                        <input type="submit" value="Submit" id="MSGSBMTBTN">
+                    </form>
+                </div>
+            </div>
+
+            <%- include('footer.ejs') %>
+
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
